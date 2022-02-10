@@ -9,6 +9,33 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
+      - name: 🦑 Additional
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: additional.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          debug: yes
+          debug_print: yes
+
+          # Options
+          base: ""
+          config_order: rss, music
+          config_timezone: Asia/Hong_Kong
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_rss: yes
+          plugin_rss_limit: 4
+          plugin_rss_source: https://blog.hoshi.tech/feed
+          plugin_music: yes
+          plugin_music_limit: 4
+          plugin_music_mode: playlist
+          plugin_music_playlist: ${{ secrets.MUSIC_PALYLIST }}
+          plugin_music_provider: youtube
+          plugin_music_time_range: short
+          plugin_music_top_type: tracks
+          plugin_music_user: ${{ secrets.MUSIC_USER }}
+          
       - name: 🦑 General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -37,28 +64,4 @@ jobs:
           plugin_languages_threshold: 0%
           plugin_lines: yes
           plugin_traffic: yes
-          
-      - name: 🦑 Additional
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: additional.svg
-          token: ${{ secrets.METRICS_TOKEN }}
 
-          # Options
-          base: ""
-          config_order: rss, music
-          config_timezone: Asia/Hong_Kong
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          plugin_rss: yes
-          plugin_rss_limit: 4
-          plugin_rss_source: https://blog.hoshi.tech/feed
-          plugin_music: yes
-          plugin_music_limit: 4
-          plugin_music_mode: playlist
-          plugin_music_playlist: ${{ secrets.MUSIC_PALYLIST }}
-          plugin_music_provider: youtube
-          plugin_music_time_range: short
-          plugin_music_top_type: tracks
-          plugin_music_user: ${{ secrets.MUSIC_USER }}

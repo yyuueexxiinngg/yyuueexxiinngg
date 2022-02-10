@@ -1,1 +1,7 @@
-![Metrics](https://metrics.lecoq.io/yyuueexxiinngg?template=classic&isocalendar=1&languages=1&lines=1&rss=1&isocalendar.duration=full-year&languages.limit=8&languages.sections=most-used&languages.colors=github&languages.threshold=0%25&languages.indepth=false&languages.analysis.timeout=15&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&rss.source=https%3A%2F%2Fblog.hoshi.tech%2Ffeed&rss.limit=4&config.timezone=Asia%2FHong_Kong)
+[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/yyuueexxiinngg/28f8f9233713a04e41a418adf090376d/raw/e9ecbb5471e8a6f1ff81694d730e8a7b53c03094/general.svg">](#)
+[<img align="right" width="150" alt="🦑" src="https://count.getloli.com/get/@:yyuueexxiinngg?theme=rule34">](#)
+<p align="left">
+  <a href="https://blog.hoshi.tech/">
+    <img align="left" width="390" src="https://gist.githubusercontent.com/yyuueexxiinngg/28f8f9233713a04e41a418adf090376d/raw/e9ecbb5471e8a6f1ff81694d730e8a7b53c03094/rss.svg"></img>
+  </a>
+</p>

@@ -42,11 +42,12 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: rss.svg
+          filename: additional.svg
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
           base: ""
+          config_order: rss, music
           config_timezone: Asia/Hong_Kong
           output_action: gist
           committer_gist: ${{ secrets.GIST }}

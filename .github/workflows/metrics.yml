@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: 🦑 Additional
         if: ${{ success() || failure() }}
-        uses: gh-metrics/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           filename: additional.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -27,7 +27,7 @@ jobs:
           
       - name: 🦑 General
         if: ${{ success() || failure() }}
-        uses: gh-metrics/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -53,4 +53,5 @@ jobs:
           plugin_languages_threshold: 0%
           plugin_lines: yes
           plugin_traffic: yes
+          plugin_lines_skipped: atom-isort
 
